@@ -1,0 +1,29 @@
+---
+title: "Clase"
+author: "Andrea"
+date: "2025-05-09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# *Esto es un ejemplo para la clase*
+
+Esto es texto y vamos a describir lo que estamos haciendo
+
+```{r}
+a<-2
+b<-3
+a<- a+b
+```
+
+## Grafico
+
+Quiero hacer un gráfico
+
+```{r}
+x<-rnorm (100,100,10)
+plot(x)
+```
