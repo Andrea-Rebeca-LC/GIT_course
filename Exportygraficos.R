@@ -51,3 +51,12 @@ polygon(c(1:364, 364:1), c(anomalia, rep(0, 364)), col="green")
 abline(h=0, v=c(0, cumsum(ndmes$x)), col="black", lty=3)
 axis(1, at=cumsum(ndmes$x)-ndmes$x/2, labels = c("jun","jul","ago",
                                                    "sep","oct","nov","dic","ene","feb","mar","abr","may"))
+
+#hacer regresiones
+
+x <- 1:100
+y <- 2.5*x + 31 + (rnorm(100) * 9)
+plot(x, y, col="blue")
+xy.lm <- lm(y ~ x)
+# resultados de la regrresión ver la pendiente y ordenada al origen
+summary(xy.lm)
